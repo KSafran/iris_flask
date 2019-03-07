@@ -1,9 +1,5 @@
-
-class DummyModel(object):
-    def __init__(self):
-        pass
-    def predict(self, x):
-        return 'placeholder'
+from sklearn.externals import joblib
 
 def load_model(model_path):
-    return DummyModel()
+    iris_classifier = joblib.load(model_path)
+    return iris_classifier

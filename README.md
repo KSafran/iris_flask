@@ -2,6 +2,15 @@
 Simple CI Pipeline for a Flask App
 
 # Setup
+To run locally
+```
+flask run
+curl -X POST -H "Content-Type: application/json" localhost:5000 -d '{"data":[1, 1, 1, 1]}'
+```
+
+to build and run the docker image
+```
 docker build -t iris .
-docker run --name iris -d -p 8000:5000 --rm iris:latest
-curl -X POST localhost:5000
+docker run --name iris -d -p 5000:5000 --rm iris:latest
+curl -X POST -H "Content-Type: application/json" localhost:5000 -d '{"data":[1, 1, 1, 1]}'
+```
