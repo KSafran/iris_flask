@@ -12,4 +12,6 @@ RUN /bin/bash -c "python3 -m venv venv \
 
 COPY . /app
 ENV FLASKAPP app
-ENTRYPOINT ["boot_app.sh"]
+RUN chmod +x ./boot_app.sh
+EXPOSE 5000
+ENTRYPOINT ["./boot_app.sh"]
