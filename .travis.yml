@@ -12,7 +12,5 @@ install:
 
 script:
   - mkdir data
-script:
   - python train_model.py
-script:
   - pytest app
