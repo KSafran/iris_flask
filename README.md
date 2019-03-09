@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/KSafran/iris_flask.svg?branch=master)](https://travis-ci.org/KSafran/iris_flask)
 # iris_flask
 Simple CI Pipeline for a Flask App
 
