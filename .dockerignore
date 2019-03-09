@@ -1,1 +1,6 @@
-.git
+**/*.pyc
+**/__pycache__/
+
+# Don't copy any Git things
+.git/
+.gitignore
