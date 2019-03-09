@@ -11,4 +11,5 @@ install:
   - pip install -r requirements.txt
 
 script:
+  - python train_model.py
   - pytest app
