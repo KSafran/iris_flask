@@ -1,5 +1,5 @@
-from .pyconfig import config
-from .iris_model import load_model
+from app.pyconfig import config
+from app.iris_model import load_model
 
 def test_model_load():
     model = load_model(config['MODEL'])
